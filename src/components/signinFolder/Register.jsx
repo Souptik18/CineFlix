@@ -45,8 +45,8 @@ function Register() {
     try {
       let response = await account.createOAuth2Session(
         "google",
-        "http://localhost:5173/home",
-        "http://localhost:5173/fail"
+        "https://cine-flix-souptik018.vercel.app/home",
+        "https://cine-flix-souptik018.vercel.app/fail"
       );
       console.log(response);
     } catch (e) {
