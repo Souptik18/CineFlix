@@ -37,7 +37,7 @@ function Homepage() {
     }
   };
   const getMovie = async () => {
-    const url = `http://www.omdbapi.com/?s=${search}&apikey=ab0f82b6`;
+    const url = `https://www.omdbapi.com/?s=${search}&apikey=ab0f82b6`;
     const response = await fetch(url);
     const data = await response.json();
     setMovie(data.Search);

@@ -37,7 +37,7 @@ function MyFavouritesPage() {
           // console.log(docID);
           if (imdbIDs) {
             for (const id of imdbIDs) {
-              const url = `http://www.omdbapi.com/?i=${id}&plot=full&apikey=ab0f82b6`;
+              const url = `https://www.omdbapi.com/?i=${id}&plot=full&apikey=ab0f82b6`;
               const response = await fetch(url);
               const data = await response.json();
 
