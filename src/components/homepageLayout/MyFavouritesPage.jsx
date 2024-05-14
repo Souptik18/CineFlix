@@ -142,7 +142,7 @@ function MyFavouritesPage() {
         <>
           {checkFav ? (
             <div className="flex h-screen justify-center items-center">
-              <div className="text-center"> {Loader()} </div>
+              <div className="text-center"> {Loader()}</div>
             </div>
           ) : (
             <div className="text-center text-black mt-20">

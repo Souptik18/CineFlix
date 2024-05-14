@@ -27,13 +27,15 @@ function Navbar() {
       >
         <div className=" flex items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
           <div className="inline-flex items-center space-x-2">
-            <span
-              className={`font-bold ${
-                darkModeEnabled ? "text-white" : "text-black"
-              }`}
-            >
-              CineFlix
-            </span>
+            <NavLink to="/home">
+              <span
+                className={`font-bold ${
+                  darkModeEnabled ? "text-white" : "text-black"
+                }`}
+              >
+                CineFlix
+              </span>
+            </NavLink>
           </div>
           <div className="hidden grow items-start lg:flex">
             <ul className="ml-12 inline-flex space-x-8">
