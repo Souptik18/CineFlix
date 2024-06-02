@@ -11,17 +11,17 @@ function Contact() {
             <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
               <div className="flex items-center justify-center">
                 <div className="px-2 md:px-12">
-                  <p className="text-2xl font-bold text-gray-900 md:text-4xl">
+                  <p className="text-2xl font-bold text-gray-400 md:text-4xl">
                     Get in touch
                   </p>
-                  <p className="mt-4 text-lg text-gray-600">
+                  <p className="mt-4 text-lg text-gray-400">
                     Our friendly team would love to hear from you.
                   </p>
                   <form action="" className="mt-8 space-y-4">
-                    <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
+                    <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2 text-slate-500">
                       <div className="grid w-full  items-center gap-1.5">
                         <label
-                          className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                          className="text-sm font-medium leading-none text-gray-500 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                           htmlFor="first_name"
                         >
                           First Name
@@ -35,7 +35,7 @@ function Contact() {
                       </div>
                       <div className="grid w-full  items-center gap-1.5">
                         <label
-                          className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                          className="text-sm font-medium leading-none text-gray-500 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                           htmlFor="last_name"
                         >
                           Last Name
@@ -50,13 +50,13 @@ function Contact() {
                     </div>
                     <div className="grid w-full  items-center gap-1.5">
                       <label
-                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        className="text-sm font-medium leading-none text-gray-500 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         htmlFor="email"
                       >
                         Email
                       </label>
                       <input
-                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-500 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                         type="text"
                         id="email"
                         placeholder="Email"
@@ -64,13 +64,13 @@ function Contact() {
                     </div>
                     <div className="grid w-full  items-center gap-1.5">
                       <label
-                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        className="text-sm font-medium leading-none text-gray-500 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         htmlFor="phone_number"
                       >
                         Phone number
                       </label>
                       <input
-                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-500 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                         type="tel"
                         id="phone_number"
                         placeholder="Phone number"
@@ -78,13 +78,13 @@ function Contact() {
                     </div>
                     <div className="grid w-full  items-center gap-1.5">
                       <label
-                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        className="text-sm font-medium leading-none text-gray-500 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         htmlFor="message"
                       >
                         Message
                       </label>
                       <textarea
-                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-500 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                         id="message"
                         placeholder="Leave us a message"
                         cols="3"
@@ -92,7 +92,7 @@ function Contact() {
                     </div>
                     <button
                       type="button"
-                      className="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                      className="w-full rounded-md bg-slate-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                     >
                       Send Message
                     </button>
@@ -169,7 +169,7 @@ function Contact() {
                 <ul className="-m-5 flex flex-wrap items-center">
                   <li className="p-5">
                     <a
-                      className="font-medium text-gray-600 hover:text-gray-700"
+                      className="font-medium text-gray-600 hover:text-gray-500"
                       href="#"
                     >
                       Privacy Policy
