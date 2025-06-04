@@ -17,7 +17,7 @@ function MovieDetails() {
       const arr = checkRef.current || [];
       const movieID = arr[arr.length - 1];
 
-      const url = `https://www.omdbapi.com/?i=${movieID}&plot=full&apikey=ab0f82b6`;
+      const url = `https://www.omdbapi.com/?i=${movieID}&plot=full&apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
       try {
         const response = await fetch(url);
         const data = await response.json();

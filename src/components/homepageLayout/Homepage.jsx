@@ -37,7 +37,7 @@ function Homepage() {
     }
   };
   const getMovie = async () => {
-    const url = `https://www.omdbapi.com/?s=${search}&apikey=ab0f82b6`;
+    const url = `https://www.omdbapi.com/?s=${search}&apikey=${import.meta.env.VITE_OMDB_API_KEY}`;
     const response = await fetch(url);
     const data = await response.json();
     setMovie(data.Search);
@@ -58,7 +58,7 @@ function Homepage() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "fd5f052ca0msh17df6414e90e622p12a46djsndd703d160c9c",
+        "X-RapidAPI-Key": import.meta.env.VITE_RAPIDAPI_KEY,
         "X-RapidAPI-Host": "imdb-top-100-movies.p.rapidapi.com",
       },
     };

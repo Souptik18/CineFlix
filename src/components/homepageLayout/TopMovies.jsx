@@ -15,7 +15,7 @@ function TopMovies() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "fd5f052ca0msh17df6414e90e622p12a46djsndd703d160c9c",
+        "X-RapidAPI-Key": import.meta.env.VITE_RAPIDAPI_KEY,
         "X-RapidAPI-Host": "imdb-top-100-movies.p.rapidapi.com",
       },
     };
