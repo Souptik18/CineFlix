@@ -92,7 +92,8 @@ function Homepage() {
               Top 100 all time hits{" "}
             </h2>
             <div className="flex justify-center flex-wrap gap-4 bg-slate-800">
-              {trending.map((item) => (
+              {Array.isArray(trending) &&
+                trending.map((item) => (
                 <div key={item.id} className="flex">
                   <NavLink to={`/home/topMovies/${item.id}`}>
                     <img

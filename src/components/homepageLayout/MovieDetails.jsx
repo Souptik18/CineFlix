@@ -146,7 +146,8 @@ function MovieDetails() {
               <span className="font-bold">Awards: </span>
               {detail.Awards || "No Result"}
             </div>
-            {detail.Ratings.map((rating) => (
+            {Array.isArray(detail?.Ratings) &&
+              detail.Ratings.map((rating) => (
               <div key={nanoid()} className="mt-2">
                 <div className="font-bold">
                   Source - {rating.Source || "No Result"}
