@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import loginPic from "../images/loginPic.jpg";
 import { EyeIcon, EyeOffIcon } from "@heroicons/react/solid";
 import { account } from "../../appwrite/config";
-function Register() {
+function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -20,9 +20,9 @@ function Register() {
     e.preventDefault();
     // console.log("Email:", email);
     // console.log("Password:", password);
-    Register();
+    loginUser();
   };
-  const Register = async () => {
+  const loginUser = async () => {
     try {
       let response = await account.createEmailPasswordSession(email, password);
       // console.log(response);
@@ -137,4 +137,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default Login;

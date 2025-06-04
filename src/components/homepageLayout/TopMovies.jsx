@@ -73,13 +73,14 @@ function TopMovies() {
                   height="500px"
                   allowFullScreen
                 ></iframe>
-                {item.writers.map((e) => {
-                  return (
-                    <h5 key={nanoid()} className="mt-2">
-                      Writers - {e}
-                    </h5>
-                  );
-                })}
+                {Array.isArray(item.writers) &&
+                  item.writers.map((e) => {
+                    return (
+                      <h5 key={nanoid()} className="mt-2">
+                        Writers - {e}
+                      </h5>
+                    );
+                  })}
               </div>
             ))}
           </div>
